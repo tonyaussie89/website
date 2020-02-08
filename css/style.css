@@ -1,0 +1,117 @@
+/*------------------
+	Debug palette
+------------------*/
+/*-------------------
+	Def Colors
+-------------------*/
+/*------------------
+	Font Weights
+------------------*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background: #fff;
+}
+
+.showcase {
+  background-image: url("https://source.unsplash.com/1600x900/?ocean,surf");
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.showcase h1, .showcase h2, .showcase img {
+  padding: 10px 10px;
+}
+.showcase__logo {
+  border-radius: 50%;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 25px;
+  padding: 0;
+  box-shadow: 0 0 10px 7px #333;
+}
+.showcase h1 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px #ffb677, -1px -1px 3px #edf7fa;
+  color: #926239;
+}
+.showcase h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #ffb677, -1px -1px 1px #edf7fa;
+  color: #926239;
+}
+.showcase__buttons {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+@media (max-width: 767px) {
+  .showcase__buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+}
+.showcase__buttons__button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px #ffb677, -1px -1px 1px #edf7fa;
+  font-size: 18px;
+  text-decoration: none;
+  color: #926239;
+  border: #926239 1px solid;
+  padding: 10px 30px;
+  margin: 0 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 7px #333;
+  text-transform: uppercase;
+}
+.showcase__buttons__button:hover, .showcase__buttons__button:visited {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+
+.fixed__header {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-areas: " fixed__header__logo fixed__header__title 		fixed__header__nav fixed__header__break fixed__header__form ";
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: minmax(50px, auto) auto minmax(50px, auto);
+  grid-template-areas: " cover cover cover " " main aside1 aside2 " " footer footer footer ";
+}
+
+/*# sourceMappingURL=style.css.map */

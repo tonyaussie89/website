@@ -1,0 +1,8 @@
+.section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: minmax(50px, auto) auto minmax(50px, auto);
+  grid-template-areas: " cover cover cover " " main aside1 aside2 " " footer footer footer ";
+}
+
+/*# sourceMappingURL=style.homepage.css.map */
